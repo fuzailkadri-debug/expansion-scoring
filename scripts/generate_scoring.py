@@ -140,25 +140,37 @@ def load_hex_data(filepath) -> pd.DataFrame:
 
     # Detect format based on columns
     if 'opportunity_name' in df.columns and 'num_free_users' in df.columns:
-        # New format: aggregate by opportunity_name
+        # Format A: num_free_users / num_self_serve_users / num_users_with_dept_match
         aggregated = df.groupby('opportunity_name').agg({
             'num_free_users': 'sum',
             'num_self_serve_users': 'sum',
             'num_users_with_dept_match': 'sum'
         }).reset_index()
-
-        # Primary metric: users with department match (highest expansion potential)
-        # These are free/self-serve users in the SAME department as the license
         aggregated['total_free_users'] = aggregated['num_users_with_dept_match']
-
-        # Also keep total for reference
         aggregated['total_all_free_users'] = (
             aggregated['num_free_users'] + aggregated['num_self_serve_users']
         )
         return aggregated
 
+    elif 'opportunity_name' in df.columns and 'free_users_with_dept_match' in df.columns:
+        # Format B: dept_match breakdown columns
+        aggregated = df.groupby('opportunity_name').agg({
+            'free_users_with_dept_match': 'sum',
+            'self_serve_with_dept_match': 'sum',
+            'total_free_users': 'sum',
+            'total_self_serve_users': 'sum',
+        }).reset_index()
+        # Primary scoring metric: dept-matched free + self-serve users
+        aggregated['total_free_users'] = (
+            aggregated['free_users_with_dept_match'] + aggregated['self_serve_with_dept_match']
+        )
+        aggregated['total_all_free_users'] = (
+            aggregated['total_free_users'] + aggregated['total_self_serve_users']
+        )
+        return aggregated
+
     elif 'email_domain' in df.columns and 'total_expansion_users' in df.columns:
-        # Old format: keep as-is for backward compatibility
+        # Format C (old): keep as-is for backward compatibility
         return df
 
     else:
