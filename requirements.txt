@@ -1,0 +1,6 @@
+streamlit>=1.32.0
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# Uncomment when you have Salesforce API access:
+# simple-salesforce>=1.12.0
