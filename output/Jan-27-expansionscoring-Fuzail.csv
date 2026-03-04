@@ -1,0 +1,135 @@
+Organization,Tier,Total Score,Free (Dept Match),Self-Serve (Dept Match),Total Dept Match,Free (All Depts),Self-Serve (All Depts),Total All Users,License Type,Customer Usage Health,True Activation,Renewal Target Amount,Days to Renewal,Renewal Date,License Pts,Health Pts,Activation Pts,Free User Pts,ARR Pts,Renewal Pts
+Regional Centre for Biotechnology- 25 Named Users,Tier 1,86,36,0,36,72,2,74,Named User,Green,1.0,5385.0,25,2026-02-23,7,20,18,22,4,15
+"University of Saskatchewan - Dept of Anatomy, Physiology and Pharmacology",Tier 1,80,109,30,139,269,77,346,Defined Group,Yellow,1.3658536585365855,8831.4,3,2026-02-01,5,8,18,25,4,20
+University of Eastern Finland,Tier 1,75,24,0,24,163,14,177,Named User,Green,0.975,24442.6,135,2026-06-13,7,20,16,18,8,6
+Augusta University - Department of Physiology,Tier 1,75,57,24,81,151,48,199,Named User,Green,1.0,4308.0,260,2026-10-16,7,20,18,25,2,3
+Florida State University - College of Health & Human Sciences,Tier 1,75,135,17,152,185,23,208,Named User,Green,0.9714285714285714,7539.0,368,2027-02-01,7,20,16,25,4,3
+University of Ljubljana - Faculty of Pharmacy,Tier 1,75,87,5,92,238,34,272,Named User,Yellow,0.9692307692307692,14001.0,60,2026-03-30,7,8,16,25,6,13
+University of Eastern Piedmont,Tier 1,75,94,4,98,225,6,231,Named User,Yellow,0.9838709677419355,12924.0,40,2026-03-10,7,8,16,25,6,13
+University of New Mexico - Dept of Cell Bio & Physiology,Tier 2,73,55,14,69,155,48,203,Named User,Green,0.95,4308.0,276,2026-11-01,7,20,16,25,2,3
+Indian Institute of Science Education and Research Mohali - Department of Biological Sciences,Tier 2,73,20,3,23,295,24,319,Named User,Green,1.0,5385.0,155,2026-07-03,7,20,18,18,4,6
+University of Cincinnati - Department of Biomedical Engineering,Tier 2,72,111,25,136,231,71,302,Defined Group,Red,1.1666666666666667,5169.6,56,2026-03-26,5,3,18,25,4,17
+Augusta University - Vascular Biology Center,Tier 2,71,57,24,81,151,48,199,Named User,Yellow,0.9523809523809523,4523.4,46,2026-03-16,7,8,16,25,2,13
+Candice CHUM research Center- Erik Joly,Tier 2,70,8,1,9,59,6,65,Named User,Green,0.9591836734693877,10123.8,73,2026-04-12,7,20,16,10,6,11
+University of Puerto Rico,Tier 2,70,105,18,123,247,36,283,Defined Group,Yellow,1.3,6462.0,100,2026-05-09,5,8,18,25,4,10
+"National Institute of Biological Sciences, Beijing- Jing Zhang",Tier 2,70,6,0,6,37,1,38,Named User,Green,1.0,7323.6,62,2026-04-01,7,20,18,10,4,11
+San Diego State University - Cell and Molecular Biology Program Area (Biology Department),Tier 2,68,46,10,56,123,32,155,Named User,Yellow,1.0,5385.0,149,2026-06-27,7,8,18,25,4,6
+University Medical Center Hamburg-Eppendorf - Institute for Cellular and Integrative Physiology,Tier 2,68,39,3,42,205,22,227,Named User,Green,0.9,4308.0,314,2026-12-09,7,20,14,22,2,3
+"Oregon State University - School of Chemical, Biological, and Environmental Engineering",Tier 2,67,93,22,115,220,58,278,Named User,Green,0.8571428571428571,4308.0,289,2026-11-14,7,20,10,25,2,3
+University of Puerto Rico - Biomedical Sciences,Tier 2,67,105,18,123,247,36,283,Right to Deploy,Yellow,0.9666666666666667,4308.0,35,2026-03-05,3,8,16,25,2,13
+Universitat Ramon Llull - Bioengineering,Tier 2,66,14,0,14,77,0,77,Defined Group,Extra Green,2.0,4308.0,285,2026-11-10,5,25,18,14,2,2
+Hamad Bin Khalifa - College of Health and Life Sciences,Tier 2,66,43,4,47,57,14,71,Defined Group,Yellow,1.292929292929293,21324.6,141,2026-06-19,5,8,18,22,8,5
+UT El Paso,Tier 2,65,46,7,53,107,19,126,Named User (Chargeback),Red,0.96,5385.0,43,2026-03-13,4,3,16,25,4,13
+Teagasc,Tier 2,65,31,0,31,50,1,51,Defined Group,Yellow,1.292857142857143,28756.0,326,2026-12-21,5,8,18,22,10,2
+Georgetown University - Department of Biology,Tier 2,65,33,19,52,195,81,276,Defined Group,Yellow,1.6,8616.0,177,2026-07-25,5,8,18,25,4,5
+Istituto Neurologico Carlo Besta(IRCCS),Tier 2,64,12,0,12,25,0,25,Named User,Yellow,0.9863013698630136,15724.2,72,2026-04-11,7,8,16,14,8,11
+Oregon State University - Department of Biomedical Sciences,Tier 2,64,93,22,115,220,58,278,Defined Group,Red,0.8666666666666667,9693.0,50,2026-03-20,5,3,10,25,4,17
+Delaware State University,Tier 2,63,11,0,11,14,1,15,Defined Group,Red,1.3584905660377358,11416.2,42,2026-03-12,5,3,18,14,6,17
+University of Pavia - Department of Internal Medicine and Therapeutics,Tier 2,63,26,3,29,93,11,104,Defined Group,Red,1.0476190476190477,4523.4,59,2026-03-29,5,3,18,18,2,17
+Burnet Institute,Tier 2,63,9,1,10,11,1,12,Named User,Red,0.968421052631579,18943.0,16,2026-02-14,7,3,16,14,8,15
+Florida State University - College of Arts and Sciences (Multiyear 1 of 3),Tier 2,62,135,17,152,185,23,208,Named User,Red,0.90625,32864.0,284,2026-11-09,7,3,14,25,10,3
+Oregon State University - Department of Pharmaceutical Sciences,Tier 2,62,93,22,115,220,58,278,Defined Group,Yellow,1.3181818181818181,9477.6,387,2027-02-20,5,8,18,25,4,2
+Empa,Tier 2,62,9,1,10,30,5,35,Named User,Green,0.9459459459459459,7969.8,320,2026-12-15,7,20,14,14,4,3
+Czech Academy of Sciences,Tier 2,62,20,1,21,161,19,180,Named User,Yellow,0.9166666666666666,7539.0,82,2026-04-21,7,8,14,18,4,11
+University of Ljubljana - Institute of Biochemistry,Tier 2,62,87,5,92,238,34,272,Defined Group,Yellow,1.457142857142857,7539.0,323,2026-12-18,5,8,18,25,4,2
+"University of Saskatchewan - Department of Biochemistry, Microbiology and Immunology",Tier 2,62,109,30,139,269,77,346,Defined Group,Yellow,1.1666666666666667,6462.0,276,2026-11-01,5,8,18,25,4,2
+University of Saskatchewan - Vaccine and Infectious Disease Organization (VIDO),Tier 2,61,109,30,139,269,77,346,Named User,Yellow,0.9230769230769231,5600.4,262,2026-10-18,7,8,14,25,4,3
+University of New Mexico - Molecular Genetics and Microbiology,Tier 2,61,55,14,69,155,48,203,Named User,Yellow,0.9393939393939394,7108.2,214,2026-08-31,7,8,14,25,4,3
+University of Siena - Department of Medical Biotechnologies,Tier 2,60,57,0,57,232,15,247,Right to Deploy,Red,0.9361702127659575,9477.6,72,2026-04-11,3,3,14,25,4,11
+University of New Mexico Department of Biology,Tier 2,60,55,14,69,155,48,203,Defined Group,Red,1.2307692307692308,8400.6,160,2026-07-08,5,3,18,25,4,5
+University of St Andrews - School of Medicine,Tier 2,59,46,6,52,105,15,120,Defined Group,Red,1.5471698113207548,10568.2,191,2026-08-08,5,3,18,25,6,2
+Florida State University - Department of Biomedical Sciences,Tier 2,59,135,17,152,185,23,208,Defined Group,Red,1.2586206896551724,12493.2,232,2026-09-18,5,3,18,25,6,2
+Los Alamos National Laboratory- Division of Bioscience,Tier 2,58,6,0,6,14,4,18,Defined Group,Red,1.7125,17232.0,79,2026-04-18,5,3,18,10,8,14
+Czech Academy of Sciences - Institute of Organic Chem and Biochem,Tier 2,57,2,0,2,36,2,38,Named User,Yellow,1.0,10770.0,58,2026-03-28,7,8,18,5,6,13
+Augusta University - Immunology Center of Georgia,Tier 2,57,57,24,81,151,48,199,Defined Group,Red,1.0,5385.0,308,2026-12-03,5,3,18,25,4,2
+PILOT: UFZ Center for Environmental Research - Sitewide,Tier 2,56,18,0,18,54,0,54,Sitewide,Yellow,1.7,30810.0,367,2027-01-31,4,8,18,14,10,2
+University of Perugia - Dept. of Medicine and Surgery,Tier 2,56,10,1,11,115,5,120,Named User,Yellow,0.88,10770.0,65,2026-04-04,7,8,10,14,6,11
+Academic Health Center,Tier 2,56,111,25,136,231,71,302,Right to Deploy,Red,0.593103448275862,24771.0,-16,2026-01-13,3,3,2,25,8,15
+Oregon State University - Linus Pauling Institute,Tier 2,55,93,22,115,220,58,278,Named User,Yellow,0.8,4308.0,342,2027-01-06,7,8,10,25,2,3
+FMP - Leibniz Research Institute for Molecular Pharmacology,Tier 2,55,3,0,3,12,0,12,Named User,Green,0.9615384615384616,5600.4,276,2026-11-01,7,20,16,5,4,3
+University of Sunderland - Biomedical Sciences,Tier 2,55,22,0,22,47,0,47,Named User,Yellow,0.9,4308.0,180,2026-07-28,7,8,14,18,2,6
+University of Southampton - School of Human Development and Health,Tier 2,55,25,2,27,301,55,356,Defined Group,Yellow,1.0857142857142856,7539.0,243,2026-09-29,5,8,18,18,4,2
+Georgia State University - Neuroscience Institute,Tier 3,54,32,6,38,118,28,146,Defined Group,Red,1.3181818181818181,9477.6,190,2026-08-07,5,3,18,22,4,2
+University of Puerto Rico - Industrial Biotechnology Learning Center (IBLC),Tier 3,54,105,18,123,247,36,283,Right to Deploy,Red,0.7666666666666667,4308.0,-1,2026-01-28,3,3,6,25,2,15
+Pompeu Fabra University,Tier 3,54,45,0,45,144,4,148,Named User,Red,0.8333333333333334,12924.0,125,2026-06-03,7,3,10,22,6,6
+Africa Health Research Institute,Tier 3,54,7,3,10,12,6,18,Named User (Chargeback),Red,0.9,8185.2,3,2026-02-01,4,3,14,14,4,15
+"University of California Merced,  Center for Cellular and Biomolecular Machines",Tier 3,54,16,12,28,60,30,90,Named User,Yellow,0.95,4308.0,355,2027-01-19,7,8,16,18,2,3
+Medical University of Innsbruck,Tier 3,53,22,3,25,156,38,194,Named User (Chargeback),Red,0.9565217391304348,14647.2,164,2026-07-12,4,3,16,18,6,6
+University of Chieti - Department of Innovative Technology in Medicine and Dentistry,Tier 3,52,14,0,14,79,6,85,Named User,Yellow,1.0,4308.0,216,2026-09-02,7,8,18,14,2,3
+Nova Southeastern University - Oceanographic Campus Library,Tier 3,52,35,4,39,90,21,111,Named User,Yellow,0.8571428571428571,4308.0,349,2027-01-13,7,8,10,22,2,3
+Czech Academy of Sciences - Institute of Biotechnology,Tier 3,52,20,1,21,161,19,180,Defined Group,Red,1.3898305084745763,12708.6,337,2027-01-01,5,3,18,18,6,2
+Rowan University - Cooper Medical School - Department of Biomedical Sciences,Tier 3,51,26,7,33,121,23,144,Named User,Red,0.9047619047619048,4308.0,295,2026-11-20,7,3,14,22,2,3
+"Medizinische Hochschule Hannover - Department of Gastroenterology, Hepatology and Endocrinology",Tier 3,51,13,0,13,257,94,351,Defined Group,Yellow,1.0588235294117647,7323.6,196,2026-08-13,5,8,18,14,4,2
+IRCCS Mondino Foundation,Tier 3,51,1,0,1,4,0,4,Named User,Green,0.9,4308.0,326,2026-12-21,7,20,14,5,2,3
+"University of Chieti-Dept. Medical, Oral and Biotechnology Sciences",Tier 3,50,14,0,14,79,6,85,Defined Group,Red,0.92,5385.0,92,2026-05-01,5,3,14,14,4,10
+Howard Hughes Medical Institute,Tier 3,49,9,0,9,24,4,28,Defined Group,Red,1.75,17232.0,138,2026-06-16,5,3,18,10,8,5
+University of Pavia,Tier 3,49,26,3,29,93,11,104,Right to Deploy,Red,0.92,4308.0,97,2026-05-06,3,3,14,18,2,9
+Philipps University of Marburg - Faculty of Medicine,Tier 3,49,10,2,12,191,30,221,Named User (Chargeback),Yellow,0.9615384615384616,5385.0,191,2026-08-08,4,8,16,14,4,3
+National Health Research Institutes - Library Services,Tier 3,49,13,1,14,31,2,33,Named User (Chargeback),Yellow,0.9137931034482759,11707.8,337,2027-01-01,4,8,14,14,6,3
+SRM Institute of Science and Technology - School of Bioengineering - Varshini Karthik,Tier 3,48,2,0,2,571,2,573,Named User,Yellow,1.0,5385.0,168,2026-07-16,7,8,18,5,4,6
+Riga Stradins University formerly RSU - Institute of Microbiology and Virology,Tier 3,48,3,0,3,11,1,12,Named User,Red,1.0,10770.0,93,2026-05-02,7,3,18,5,6,9
+Fox Chase Cancer Center,Tier 3,48,12,1,13,31,2,33,Named User (Chargeback),Red,0.990990990990991,22594.0,198,2026-08-15,4,3,16,14,8,3
+Oregon State University - Environmental & Molecular Toxicology + Food Science & Technology + COMES,Tier 3,48,93,22,115,220,58,278,Right to Deploy,Red,0.7833333333333333,24648.0,351,2027-01-15,3,3,6,25,8,3
+UK Health Security Agency - Radiation Department,Tier 3,48,13,0,13,58,1,59,Named User,Yellow,0.9130434782608695,4954.2,399,2027-03-04,7,8,14,14,2,3
+Tuskegee University Center for Biomedical Research,Tier 3,47,5,2,7,13,3,16,Named User,Red,0.95,4308.0,106,2026-05-15,7,3,16,10,2,9
+Czech Academy of Sciences,Tier 3,47,20,1,21,161,19,180,Right to Deploy,Red,0.8,5385.0,92,2026-05-01,3,3,10,18,4,9
+University of Greenwich - Faculty of Engineering & Science,Tier 3,46,1,0,1,7,0,7,Named User,Red,0.96,10770.0,102,2026-05-11,7,3,16,5,6,9
+"Research Center Borstel, Leibniz Lung Center",Tier 3,46,1,0,1,12,0,12,Defined Group,Yellow,1.794871794871795,16801.2,241,2026-09-27,5,8,18,5,8,2
+University of Saskatchewan - College of Ag,Tier 3,45,109,30,139,269,77,346,Named User (Chargeback),Red,0.7058823529411765,7323.6,369,2027-02-02,4,3,6,25,4,3
+University of Lodz - Faculty of Biology and Environmental Protection,Tier 3,44,8,0,8,149,28,177,Right to Deploy,Yellow,1.0,4738.8,323,2026-12-18,3,8,18,10,2,3
+Wellcome Sanger,Tier 3,44,50,2,52,129,3,132,Right to Deploy,Red,0.5733333333333334,20540.0,275,2026-10-31,3,3,2,25,8,3
+RIVM - Center for Immunology of Infectious Diseases and Vaccines,Tier 3,42,9,0,9,15,0,15,Defined Group,Red,1.205128205128205,8400.6,282,2026-11-07,5,3,18,10,4,2
+Versiti - Blood Center of Wisconsin,Tier 3,41,4,0,4,9,0,9,Defined Group,Red,1.216867469879518,17878.2,377,2027-02-10,5,3,18,5,8,2
+Institute for Clinical and Experimental Medicine,Tier 3,41,1,1,2,11,5,16,Named User,Yellow,0.8,4308.0,106,2026-05-15,7,8,10,5,2,9
+"Amity Institute of Biotechnology, Amity University Haryana (Amity University)",Tier 3,40,84,1,85,260,1,261,Right to Deploy,Red,0.325,6462.0,351,2027-01-15,3,3,2,25,4,3
+Indian Institute of Science,Tier 3,40,20,3,23,295,24,319,Named User,Yellow,0.55,4308.0,250,2026-10-06,7,8,2,18,2,3
+Georgia State University,Tier 3,38,32,6,38,118,28,146,Defined Group,Red,0.6571428571428571,7539.0,276,2026-11-01,5,3,2,22,4,2
+"University of Nevada, Las Vegas",Tier 3,38,3,0,3,22,6,28,Named User,Yellow,0.85,4308.0,162,2026-07-10,7,8,10,5,2,6
+Abo Akademi University - Faculty of Science and Technology,Tier 3,38,16,0,16,54,13,67,Named User,Yellow,0.56,5385.0,348,2027-01-12,7,8,2,14,4,3
+Rowan University - Department of Chemical Engineering,Tier 3,38,26,7,33,121,23,144,Defined Group,Red,0.375,5169.6,337,2027-01-01,5,3,2,22,4,2
+University of Southampton - School of Clinical & Experimental Sciences,Tier 3,38,25,2,27,301,55,356,Defined Group,Red,0.2,17232.0,258,2026-10-14,5,3,2,18,8,2
+University of Saskatchewan,Tier 3,38,109,30,139,269,77,346,Defined Group,,0.0,5385.0,365,2027-01-29,5,0,2,25,4,2
+Bielefeld University Medical School OWL,Tier 3,35,3,1,4,78,18,96,Named User (Chargeback),Red,0.8333333333333334,6462.0,92,2026-05-01,4,3,10,5,4,9
+"Centre for Infectious Disease Research, Diagnostics and Laboratory Surveillance (IDS)(RIVM)",Below Threshold,34,9,0,9,15,0,15,Defined Group,Red,0.8,5385.0,273,2026-10-29,5,3,10,10,4,2
+University of the West Scotland - School of Health and Life Sciences,Below Threshold,34,5,0,5,12,1,13,Defined Group,Red,0.8157894736842105,8185.2,203,2026-08-20,5,3,10,10,4,2
+Santa Clara University - College of Arts and Sciences,Below Threshold,32,3,0,3,13,2,15,Named User,Red,0.8461538461538461,5385.0,338,2027-01-02,7,3,10,5,4,3
+Cinvestav,Below Threshold,31,13,0,13,231,22,253,Right to Deploy,Red,0.6545454545454545,10770.0,197,2026-08-14,3,3,2,14,6,3
+UKE Hamburg - iPrime,Below Threshold,29,1,3,4,180,122,302,Named User (Chargeback),Red,0.75,4308.0,92,2026-05-01,4,3,6,5,2,9
+University of Hohenheim - Faculty of Natural Science and Agricultural Science,Below Threshold,29,8,0,8,135,0,135,Named User (Chargeback),Red,0.625,6462.0,148,2026-06-26,4,3,2,10,4,6
+Indian Institute of Technology,Below Threshold,28,10,0,10,148,8,156,Right to Deploy,Red,0.058333333333333334,12924.0,1051,2028-12-15,3,3,2,14,6,0
+High Point University - Office of Information Technology,Below Threshold,25,5,0,5,13,1,14,Right to Deploy,Red,0.6333333333333333,6462.0,342,2027-01-06,3,3,2,10,4,3
+Swarthmore College,Below Threshold,24,2,0,2,5,0,5,Named User,Red,0.6434782608695652,7471.0,233,2026-09-19,7,3,2,5,4,3
+Acibadem Universitesi - Library,Below Threshold,24,2,0,2,64,3,67,Right to Deploy,Red,0.104,20540.0,278,2026-11-03,3,3,2,5,8,3
+"University of Nevada, Las Vegas - School of Medicine (Year 2)",Below Threshold,24,3,0,3,22,6,28,Right to Deploy,Red,0.18666666666666668,21540.0,408,2027-03-13,3,3,2,5,8,3
+Centenary Institute,Need Hex Data,0,0,0,0,5,2,7,Named User (Chargeback),Red,0.8275862068965517,6031.2,175,2026-07-23,4,3,10,0,4,6
+University of Wyoming - Department of Animal Science,Need Hex Data,0,0,0,0,72,24,96,Defined Group,Yellow,1.2142857142857142,6031.2,169,2026-07-17,5,8,18,0,4,5
+IKP Stuttgart - Institute for Clinical Pharmacology,Need Hex Data,0,0,0,0,0,1,1,Named User,Green,0.95,4308.0,22,2026-02-20,7,20,16,0,2,15
+Comprehensive Cancer Center,Need Hex Data,0,0,0,0,0,0,0,Named User,Red,0.9,4308.0,92,2026-05-01,7,3,14,0,2,9
+ITESO,Need Hex Data,0,0,0,0,40,5,45,Named User,,0.0,5330.0,376,2027-02-09,7,0,2,0,4,3
+Presse UKR - Leibniz Insitute for Immunotherapy,Need Hex Data,0,0,0,0,38,37,75,Named User,Yellow,0.65,4308.0,305,2026-11-30,7,8,2,0,2,3
+UniversitÃ¤t Leipzig - Faculty of Medicine,Need Hex Data,0,0,0,0,0,0,0,Named User,Yellow,0.8468468468468469,22594.0,351,2027-01-15,7,8,10,0,8,3
+"University of Rhode Island (URI), College of Pharmacy",Need Hex Data,0,0,0,0,0,0,0,Named User,Yellow,0.9215686274509803,9908.4,368,2027-02-01,7,8,14,0,4,3
+University of Hannover - Medizinische Hochschule Hannover,Need Hex Data,0,0,0,0,0,0,0,Named User,Yellow,0.7375,17232.0,140,2026-06-18,7,8,6,0,8,6
+Berry College - College of Math & Science,Need Hex Data,0,0,0,0,6,0,6,Right to Deploy,Red,0.23076923076923078,6462.0,271,2026-10-27,3,3,2,0,4,3
+University Hospital of Schleswig-Holstein,Need Hex Data,0,0,0,0,85,54,139,Right to Deploy,,0.0,4308.0,366,2027-01-30,3,0,2,0,2,3
+University of Cincinnati,Need Hex Data,0,0,0,0,0,0,0,Defined Group,Red,1.28,18840.0,169,2026-07-17,5,3,18,0,8,5
+CTSCB Hong Kong,Need Hex Data,0,0,0,0,2,0,2,Named User,Green,0.95,4308.0,58,2026-03-28,7,20,16,0,2,13
+Czech Academy of Sciences - Institute of Microbiology,Need Hex Data,0,0,0,0,0,0,0,Defined Group,Yellow,1.5769230769230769,26702.0,348,2027-01-12,5,8,18,0,10,2
+Philipps Universitat Marburg - Institute for Tumor Immunology,Need Hex Data,0,0,0,0,0,0,0,Named User,Green,1.0,5385.0,250,2026-10-06,7,20,18,0,4,3
+University of Ljubljana-Biotechnical faculty,Need Hex Data,0,0,0,0,0,0,0,Right to Deploy,Yellow,0.9365079365079365,9262.2,34,2026-03-04,3,8,14,0,4,13
+Wadsworth Center - Biodefense Lab,Need Hex Data,0,0,0,0,0,0,0,Named User,Red,0.55,4308.0,136,2026-06-14,7,3,2,0,2,6
+INRS - Isabelle Plante,Need Hex Data,0,0,0,0,0,0,0,Named User,Green,1.0,5169.6,18,2026-02-16,7,20,18,0,4,15
+Wadsworth Center - Bacteriology Lab,Need Hex Data,0,0,0,0,0,0,0,Named User,,0.0,4308.0,132,2026-06-10,7,0,2,0,2,6
+"UK Health Security Agency, Research & Evaluation",Need Hex Data,0,0,0,0,0,0,0,Named User,Yellow,0.9705882352941176,14431.8,283,2026-11-08,7,8,16,0,6,3
+Institute of Molecular Genetics of the Czech Academy of Sciences,Need Hex Data,0,0,0,0,0,0,0,Named User,Green,1.0,5600.4,368,2027-02-01,7,20,18,0,4,3
+Chulabhorn Graduate Institute,Need Hex Data,0,0,0,0,13,0,13,Named User,Red,0.2,4308.0,348,2027-01-12,7,3,2,0,2,3
+IUF GMBH- 40 Named Users,Need Hex Data,0,0,0,0,1,0,1,Named User,Yellow,0.8723404255319149,10123.8,368,2027-02-01,7,8,10,0,6,3
+Concordia University of Wisconsin  - School of Pharmacy & School of Arts & Sciences - Robert Burlage,Need Hex Data,0,0,0,0,1,0,1,Named User,Red,0.5,4308.0,43,2026-03-13,7,3,2,0,2,13
+Universidade do Minho - Life and Health Sciences Research Institute,Need Hex Data,0,0,0,0,0,0,0,Named User,Yellow,0.6363636363636364,6462.0,153,2026-07-01,7,8,2,0,4,6
+Leibniz Institute on Aging â Fritz Lipmann Institute,Need Hex Data,0,0,0,0,0,0,0,Defined Group,Yellow,1.3027522935779816,22388.6,215,2026-09-01,5,8,18,0,8,2
+IIS Aragon,Need Hex Data,0,0,0,0,5,0,5,Defined Group,Extra Green,2.696969696969697,7108.2,146,2026-06-24,5,25,18,0,4,5
+German Aerospace Center,Need Hex Data,0,0,0,0,8,0,8,Named User,Yellow,0.9333333333333333,6462.0,73,2026-04-12,7,8,14,0,4,11
+Ospedale Pediatrico Bambino GesÃ¹ (Bambino GesÃ¹ Childrenâs Hospital) - Research Biobank,Need Hex Data,0,0,0,0,0,0,0,Right to Deploy,Red,0.8909090909090909,10123.8,-29,2025-12-31,3,3,10,0,6,15
+"Kaohsiung Medical University (KMU), College of Medicine",Need Hex Data,0,0,0,0,68,6,74,Named User,Yellow,0.8095238095238095,4523.4,184,2026-08-01,7,8,10,0,2,3
+University of Cape Town - Neuroscience Institute,Need Hex Data,0,0,0,0,72,18,90,Named User,Yellow,0.96,5385.0,132,2026-06-10,7,8,16,0,4,6
+NIPER Hyderabad - Named User License,Need Hex Data,0,0,0,0,2,0,2,Named User,Yellow,0.9666666666666667,6462.0,148,2026-06-26,7,8,16,0,4,6

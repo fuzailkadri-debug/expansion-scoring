@@ -1,0 +1,149 @@
+Opportunity Name,Renewal Target Amount,Renewal Date,Customer Usage Health,License Type,Opportunity Owner,Renewed Contract Value*,Customer Relationship Health,$ Growth at Renewal,Churn Reason,Churn Reason Notes,CS POC Relationship Score,Current Number of Seats Available,Seats Filled,Seat Activation Rate,Active Users Last 90 Days,Initial Number of Seats
+CS FY27 Renewal:  San Diego State University - Cell and Molecular Biology Program Area (Biology Department),5385,6/27/2026,yellow,Named User,Fuzail Kadri,,,0,,,Transactional (2/5),25,25,100,14,25
+CS FY27 Renewal:  SRM Institute of Science and Technology - School of Bioengineering - Varshini Karthik,5385,7/16/2026,yellow,Named User,Fuzail Kadri,,Healthy,0,,,Transactional (2/5),25,25,100,15,25
+CS FY27 Renewal: Georgia State University // Institute of Biomedical Sciences,7539,11/1/2026,red,Defined Group,Fuzail Kadri,,,0,,,,150,23,15,14,35
+CS FY27 Renewal:  RIVM - Center for Immunology of Infectious Diseases and Vaccines,8400.6,11/7/2026,orange,Defined Group,Fuzail Kadri,,Neutral,0,,,Seat at the Table (3/5),50,47,94,28,39
+CS FY27 Renewal:  Rowan University - Cooper Medical School - Department of Biomedical Sciences,4308,11/20/2026,orange,Named User,Fuzail Kadri,,Healthy,0,,,Seat at the Table (3/5),21,19,90,7,20
+CS FY27 Pilot Renewal:  PILOT: UFZ Center for Environmental Research - Sitewide // Thomas Wieser IT,30810,1/31/2027,yellow,Sitewide,Fuzail Kadri,,,0,,,,561,255,45,135,150
+CS FY28 Renewal: University of Saskatchewan - College of Ag,7323.6,2/2/2027,red,Named User (Chargeback),Fuzail Kadri,,,0,,,,34,24,71,8,34
+CS FY27 Renewal:  Centenary Institute,6031.2,7/23/2026,red,Named User (Chargeback),Fuzail Kadri,,Healthy,0,,,Seat at the Table (3/5),29,24,83,17,28
+CS FY27 Renewal:  Riga Stradins University formerly RSU - Institute of Microbiology and Virology // Agnija Vilkaite,10770,5/2/2026,orange,Named User,Fuzail Kadri,,Neutral,0,,,Transactional (2/5),51,51,100,24,50
+CS FY27 Renewal:   University of Wyoming - Department of Animal Science,6031.2,7/17/2026,yellow,Defined Group,Fuzail Kadri,,Extremely Healthy,0,,,Seat at the Table (3/5),40,34,85,25,28
+CS FY27 Renewal:    Medical University of Innsbruck //Andi Passer,14647.2,7/12/2026,orange,Named User (Chargeback),Fuzail Kadri,,Healthy,0,,,Trusted Advisor (4/5),69,66,96,50,56
+"CS FY27 Renewal:  Medizinische Hochschule Hannover - Department of Gastroenterology, Hepatology and Endocrinology",7323.6,8/13/2026,yellow,Defined Group,Fuzail Kadri,,Neutral,0,,,Transactional (2/5),104,36,35,28,34
+CS FY27 Renewal:    Swarthmore College,7471,9/19/2026,orange,Named User,Fuzail Kadri,,Neutral,0,,,Seat at the Table (3/5),115,74,64,33,115
+CS FY27 Renewal:    Istituto Neurologico Carlo Besta(IRCCS)//Anna Gasparello,15724.2,4/11/2026,yellow,Named User,Fuzail Kadri,15724.2,Healthy,0,,,Trusted Expert (5/5),73,72,99,42,73
+CS FY27 Renewal:  Georgia State University - Neuroscience Institute // Nancy Forger,9477.6,8/7/2026,orange,Defined Group,Fuzail Kadri,,Healthy,0,,,Transactional (2/5),100,58,58,23,44
+CS FY27 Renewal:    University of Eastern Finland,24442.6,6/13/2026,green,Named User,Fuzail Kadri,,Neutral,0,,,,120,117,98,90,106
+"CS FY27 Renewal: Amity Institute of Biotechnology, Amity University Haryana (Amity University)",6462,1/15/2027,red,Right to Deploy,Fuzail Kadri,,,0,,,,40,13,33,11,30
+CS FY27 Renewal:  University of Lodz - Faculty of Biology and Environmental Protection,4738.8,12/18/2026,yellow,Right to Deploy,Fuzail Kadri,,,0,,,Transactional (2/5),22,22,100,20,22
+CS FY27 Renewal: Universitat Ramon Llull - Bioengineering,4308,11/10/2026,extra green,Defined Group,Fuzail Kadri,,,0,,,,65,40,62,35,20
+CS FY27 Renewal:  IKP Stuttgart - Institute for Clinical Pharmacology,4308,2/20/2026,green,Named User,Fuzail Kadri,4308,High Risk,0,,,Ghost (0/5),20,19,95,15,20
+CS FY27 Renewal:    Fox Chase Cancer Center,22594,8/15/2026,red,Named User (Chargeback),Fuzail Kadri,,Healthy,0,,,Seat at the Table (3/5),111,110,99,68,110
+CS FY27 Renewal:   Los Alamos National Laboratory- Division of Bioscience// Bin Hu,17232,4/18/2026,orange,Defined Group,Fuzail Kadri,19386,Extremely Healthy,2154,,,Trusted Advisor (4/5),150,137,91,53,80
+CS FY26 Renewal: University of Puerto Rico - Industrial Biotechnology Learning Center (IBLC),4308,1/28/2026,orange,Right to Deploy,Fuzail Kadri,0,Healthy,-4308,Software Budget Cuts,"Called POC (Cacimar) to confirm renewal status.
+The Dean refused to fund BioRender due to severe budget cuts for all types of software at IBLC.
+Next step: Contact Users with a chargeback option.
+
+POC will pitch renewal in 2027, which will be a net new deal.",Seat at the Table (3/5),30,23,77,13,20
+CS FY27 Renewal:  Comprehensive Cancer Center // Named User // Camille Zenon,4308,5/1/2026,orange,Named User,Fuzail Kadri,,High Risk,0,,,Ghost (0/5),20,18,90,9,20
+CS FY27 Renewal:   Oregon State University - Department of Biomedical Sciences // Luiz Bermudezting,9693,3/20/2026,red,Defined Group,Fuzail Kadri,0,Neutral,-9693,Low activation (e.g. unassigned seats),,Trusted Advisor (4/5),110,39,35,17,45
+CS FY27 Renewal:   Santa Clara University - College of Arts and Sciences,5385,1/2/2027,red,Named User,Fuzail Kadri,,Extremely Healthy,0,,,Transactional (2/5),26,22,85,4,25
+CS FY27 Renewal:  UT El Paso // Dept of Biological Sciences // Charles Spencer,5385,3/13/2026,orange,Named User (Chargeback),Fuzail Kadri,5385,Full Churn,0,,,Hard to Get (1/5),25,24,96,18,25
+CS FY27 Renewal:   University of Greenwich - Faculty of Engineering & Science // Dale Harrison,10770,5/11/2026,orange,Named User,Fuzail Kadri,,High Risk,0,,,Trusted Advisor (4/5),50,48,96,15,50
+"CS FY27 Renewal:  University of Nevada, Las Vegas // School of Life Science",4308,7/10/2026,yellow,Named User,Fuzail Kadri,,Healthy,0,,,Seat at the Table (3/5),20,17,85,12,20
+CS FY27 Renewal:  Pompeu Fabra University // David Moreso,12924,6/3/2026,orange,Named User,Fuzail Kadri,,,0,,,,60,50,83,24,60
+CS FY27 Renewal: Augusta University - Vascular Biology Center,4523.4,3/16/2026,yellow,Named User,Fuzail Kadri,4523.4,,0,,,Hard to Get (1/5),21,20,95,11,21
+CS FY27 Renewal:    University Medical Center Hamburg-Eppendorf - Institute for Cellular and Integrative Physiology,4308,12/9/2026,green,Named User,Fuzail Kadri,,Neutral,0,,,Hard to Get (1/5),20,18,90,17,20
+CS FY27 Renewal:   Africa Health Research Institute,8185.2,2/1/2026,red,Named User (Chargeback),Fuzail Kadri,0,Extremely Healthy,-8185.2,,,Transactional (2/5),40,36,90,16,34
+CS FY28 Renewal: ITESO,5330,2/9/2027,,Named User,Fuzail Kadri,,,0,,,,,,,,500
+CS FY27 Renewal:   IRCCS Mondino Foundation,4308,12/21/2026,green,Named User,Fuzail Kadri,,Healthy,0,,,Transactional (2/5),20,18,90,15,20
+CS FY27 Renewal:  University of Cincinnati - Department of Biomedical Engineering,5169.6,3/26/2026,orange,Defined Group,Fuzail Kadri,6031.2,Neutral,861.6,,,Seat at the Table (3/5),70,28,40,12,24
+CS FY27 Renewal:  Candice CHUM research Center- Erik Joly,10123.8,4/12/2026,green,Named User,Fuzail Kadri,0,Healthy,-10123.8,,Hidden Chargeback,Trusted Advisor (4/5),49,47,96,40,47
+CS FY27 Renewal: Abo Akademi University - Faculty of Science and Technology,5385,1/12/2027,yellow,Named User,Fuzail Kadri,,,0,,,,25,14,56,18,25
+CS FY27 Renewal:    Howard Hughes Medical Institute // Janelia // Erik Snapp,17232,6/16/2026,orange,Defined Group,Fuzail Kadri,,Extremely Healthy,0,,,Trusted Advisor (4/5),200,140,70,62,80
+CS FY27 Renewal: UKE Hamburg - iPrime,4308,5/1/2026,red,Named User (Chargeback),Fuzail Kadri,0,,-4308,,,,20,15,75,12,20
+CS FY27 Renewal:  University of Perugia - Dept. of Medicine and Surgery // Florinda Apone,10770,4/4/2026,yellow,Named User,Fuzail Kadri,9693,Healthy,-1077,Low activation (e.g. unassigned seats),,Hard to Get (1/5),50,44,88,29,50
+CS FY27 Renewal: University of Siena - Department of Medical Biotechnologies,9477.6,4/11/2026,orange,Right to Deploy,Fuzail Kadri,9477.6,,0,,,Hard to Get (1/5),47,44,94,30,32
+CS FY27 Renewal:  Oregon State University - Linus Pauling Institute,4308,1/6/2027,yellow,Named User,Fuzail Kadri,,Neutral,0,,,Transactional (2/5),20,16,80,12,20
+CS FY27 Renewal:   University of Chieti - Department of Innovative Technology in Medicine and Dentistry,4308,9/2/2026,yellow,Named User,Fuzail Kadri,,Healthy,0,,,,21,21,100,11,20
+CS FY27 Renewal: Rowan University - Department of Chemical Engineering,5169.6,1/1/2027,red,Defined Group,Fuzail Kadri,,,0,,,,50,9,18,9,24
+CS FY27 Renewal: University of Puerto Rico // RISE Research Group // Gerardo Torres,6462,5/9/2026,yellow,Defined Group,Fuzail Kadri,,,0,,,,60,39,65,24,30
+CS FY27 Renewal:    Florida State University - College of Arts and Sciences (Multiyear 1 of 3),32864,11/9/2026,orange,Named User,Fuzail Kadri,,Healthy,0,,,,160,145,91,63,160
+CS FY27 Renewal:    University of Saskatchewan - Vaccine and Infectious Disease Organization (VIDO),5600.4,10/18/2026,yellow,Named User,Fuzail Kadri,,Neutral,0,,,,26,24,92,17,26
+CS FY27 Renewal:    Presse UKR - Leibniz Insitute for Immunotherapy,4308,11/30/2026,yellow,Named User,Fuzail Kadri,,High Risk,0,,,Ghost (0/5),20,13,65,13,20
+CS FY27 Renewal:  Universität Leipzig - Faculty of Medicine,22594,1/15/2027,yellow,Named User,Fuzail Kadri,,,0,,,Transactional (2/5),111,94,85,71,110
+"CS FY27 Renewal:    Research Center Borstel, Leibniz Lung Center",16801.2,9/27/2026,yellow,Defined Group,Fuzail Kadri,,High Risk,0,,,Transactional (2/5),200,140,70,70,78
+CS FY27 Renewal:     Nova Southeastern University - Oceanographic Campus Library,4308,1/13/2027,yellow,Named User,Fuzail Kadri,,Extremely Healthy,0,,,,21,18,86,11,20
+"CS FY28 Renewal:    University of Rhode Island (URI), College of Pharmacy",9908.4,2/1/2027,yellow,Named User,Fuzail Kadri,,Healthy,0,,,Transactional (2/5),51,47,92,36,46
+CS FY27 Renewal:    University of New Mexico - Dept of Cell Bio & Physiology,4308,11/1/2026,green,Named User,Fuzail Kadri,,High Risk,0,,,,20,19,95,18,20
+CS FY27 Renewal:  University of Hannover - Medizinische Hochschule Hannover // Barbel Graus,17232,6/18/2026,yellow,Named User,Fuzail Kadri,,High Risk,0,,,Transactional (2/5),80,59,74,47,50
+CS FY27 Renewal: Berry College - College of Math & Science,6462,10/27/2026,red,Right to Deploy,Fuzail Kadri,,,0,,,,52,12,23,11,30
+CS FY27 Renewal:  Augusta University - Department of Physiology,4308,10/16/2026,green,Named User,Fuzail Kadri,,Neutral,0,,,Transactional (2/5),20,20,100,18,20
+CS FY28 Renewal:   Oregon State University - Department of Pharmaceutical Sciences,9477.6,2/20/2027,yellow,Defined Group,Fuzail Kadri,,Healthy,0,,,Hard to Get (1/5),60,58,97,41,44
+"CS FY27 Renewal:  National Institute of Biological Sciences, Beijing- Jing Zhang",7323.6,4/1/2026,green,Named User,Fuzail Kadri,7323.6,High Risk,0,,,Ghost (0/5),35,35,100,33,34
+CS FY27 Renewal:  Czech Academy of Sciences - Institute of Biotechnology,12708.6,1/1/2027,orange,Defined Group,Fuzail Kadri,,,0,,,Transactional (2/5),120,82,68,40,59
+CS FY27 Renewal: University Hospital of Schleswig-Holstein // Institute for Systemic Inflammation Research,4308,1/30/2027,,Right to Deploy,Fuzail Kadri,,,0,,,,26,0,0,0,20
+"CS FY27 Renewal:    University of California Merced,  Center for Cellular and Biomolecular Machines//Ajay Gopinathan",4308,1/19/2027,yellow,Named User,Fuzail Kadri,,No Engagement,0,,,Transactional (2/5),20,19,95,11,20
+CS FY27 Renewal:  Teagasc,28756,12/21/2026,yellow,Defined Group,Fuzail Kadri,,Neutral,0,,,Trusted Advisor (4/5),401,181,45,115,140
+CS FY27 Renewal:  University of New Mexico Department of Biology,8400.6,7/8/2026,orange,Defined Group,Fuzail Kadri,,Neutral,0,,,Ghost (0/5),132,48,36,21,39
+"CS FY27 Renewal:  Oregon State University - School of Chemical, Biological, and Environmental Engineering",4308,11/14/2026,green,Named User,Fuzail Kadri,,High Risk,0,,,Ghost (0/5),21,18,86,16,20
+CS FY28 Renewal:     Florida State University - College of Health & Human Sciences,7539,2/1/2027,green,Named User,Fuzail Kadri,,Healthy,0,,,Transactional (2/5),35,34,97,28,35
+CS FY27 Renewal: Oregon State University - Environmental & Molecular Toxicology + Food Science & Technology + COMES,24648,1/15/2027,orange,Right to Deploy,Fuzail Kadri,,,0,,,,180,141,78,77,120
+CS FY27 Renewal:    University of St Andrews - School of Medicine,10568.2,8/8/2026,orange,Defined Group,Fuzail Kadri,,Extremely Healthy,0,,,Seat at the Table (3/5),200,82,41,32,53
+CS FY27 Renewal:  Delaware State University // Department of Biological Sciences // Katarzyna Rosikon,11416.2,3/12/2026,red,Defined Group,Fuzail Kadri,11416.2,Healthy,0,,,Seat at the Table (3/5),150,72,48,24,53
+"CS FY27 Renewal:  Centre for Infectious Disease Research, Diagnostics and Laboratory Surveillance (IDS)(RIVM)",5385,10/29/2026,red,Defined Group,Fuzail Kadri,,Healthy,0,,,Seat at the Table (3/5),60,20,33,11,25
+CS FY27 Renewal:   University of Cincinnati // Department of Internal Medicine,18840,7/17/2026,orange,Defined Group,Fuzail Kadri,0,Healthy,-18840,,,Seat at the Table (3/5),400,128,32,52,100
+CS FY27 Renewal:  University of Pavia - Department of Internal Medicine and Therapeutics // Laura Deborah Locati,4523.4,3/29/2026,orange,Defined Group,Fuzail Kadri,0,Healthy,-4523.4,Software Budget Cuts,,Ghost (0/5),40,22,55,11,21
+CS FY27 Renewal: Acibadem Universitesi - Library,20540,11/3/2026,red,Right to Deploy,Fuzail Kadri,,,0,,,,125,13,10,11,100
+CS FY28 Renewal:    UK Health Security Agency - Radiation Department,4954.2,3/4/2027,yellow,Named User,Fuzail Kadri,,Neutral,0,,,Transactional (2/5),23,21,91,13,23
+CS FY27 Renewal: Wellcome Sanger,20540,10/31/2026,orange,Right to Deploy,Fuzail Kadri,,,0,,,,150,86,57,51,100
+CS FY27 Renewal:   CTSCB Hong Kong,4308,3/28/2026,green,Named User,Fuzail Kadri,4308,Neutral,0,,,Hard to Get (1/5),20,19,95,18,20
+CS FY27 Renewal:   Czech Academy of Sciences - Institute of Microbiology,26702,1/12/2027,yellow,Defined Group,Fuzail Kadri,,Neutral,0,,,Hard to Get (1/5),300,205,68,113,130
+"CS FY27 Renewal:  University of Chieti-Dept. Medical, Oral and Biotechnology Sciences//Mariachiara Zuccarini",5385,5/1/2026,red,Defined Group,Fuzail Kadri,,Healthy,0,,,Seat at the Table (3/5),50,23,46,11,25
+CS FY27 Renewal:   Philipps Universitat Marburg - Institute for Tumor Immunology,5385,10/6/2026,green,Named User,Fuzail Kadri,,High Risk,0,,,Hard to Get (1/5),25,25,100,21,25
+CS FY27 Renewal:    FMP - Leibniz Research Institute for Molecular Pharmacology,5600.4,11/1/2026,green,Named User,Fuzail Kadri,,No Engagement,0,,,,26,25,96,22,26
+CS FY27 Renewal:    Empa,7969.8,12/15/2026,green,Named User,Fuzail Kadri,,Healthy,0,,,Trusted Advisor (4/5),37,35,95,28,37
+CS FY27 Renewal:   Cinvestav,10770,8/14/2026,orange,Right to Deploy,Fuzail Kadri,12924,Extremely Healthy,2154,,,Trusted Expert (5/5),55,36,65,34,50
+CS FY27 Renewal:  Czech Academy of Sciences - Institute of Organic Chem and Biochem // Jiri Polach,10770,3/28/2026,yellow,Named User,Fuzail Kadri,10770,Neutral,0,,,Hard to Get (1/5),52,52,100,38,50
+CS FY27 Renewal: University of Ljubljana-Biotechnical faculty//Meta Sterniša,9262.2,3/4/2026,yellow,Right to Deploy,Fuzail Kadri,0,,-9262.2,Software Budget Cuts,Hidden chatgeback and budget cuts,Transactional (2/5),63,59,94,36,43
+CS FY27 Renewal:  Wadsworth Center - Biodefense Lab,4308,6/14/2026,red,Named User,Fuzail Kadri,,Neutral,0,,,Seat at the Table (3/5),20,11,55,3,20
+CS FY27 Renewal:   INRS - Isabelle Plante // Centre Armand-Frappier Santé Biotechnologie,5169.6,2/16/2026,green,Named User,Fuzail Kadri,5385,Neutral,215.4,,,Hard to Get (1/5),26,26,100,22,24
+CS FY27 Renewal:   University of New Mexico - Molecular Genetics and Microbiology,7108.2,8/31/2026,yellow,Named User,Fuzail Kadri,,High Risk,0,,,Seat at the Table (3/5),33,31,94,24,33
+CS FY27 Renewal:  Wadsworth Center - Bacteriology Lab,4308,6/10/2026,,Named User,Fuzail Kadri,,Full Churn,0,,,Ghost (0/5),,,,,20
+CS FY27 Renewal: Czech Academy of Sciences // Miroslav Obornik // Biology Center,7539,4/21/2026,yellow,Named User,Fuzail Kadri,7539,,0,,,Ghost (0/5),36,33,92,25,34
+CS FY27 Renewal:   Hamad Bin Khalifa - College of Health and Life Sciences,21324.6,6/19/2026,yellow,Defined Group,Fuzail Kadri,,Healthy,0,,,,130,128,98,80,99
+"CS FY27 Renewal:   UK Health Security Agency, Research & Evaluation",14431.8,11/8/2026,yellow,Named User,Fuzail Kadri,,Healthy,0,,,Transactional (2/5),68,66,97,35,63
+CS FY28 Renewal:    Versiti - Blood Center of Wisconsin,17878.2,2/10/2027,orange,Defined Group,Fuzail Kadri,,,0,,,Transactional (2/5),120,101,84,58,83
+CS FY27 Renewal:   University of Ljubljana - Institute of Biochemistry,7539,12/18/2026,yellow,Defined Group,Fuzail Kadri,,Neutral,0,,,Seat at the Table (3/5),60,51,85,33,35
+CS FY26 Renewal: Academic Health Center,24771,1/13/2026,red,Right to Deploy,Fuzail Kadri,18955.2,,-5815.8,NIH Indirect Cost,"The budget cuts are a combination of NIH-related and reduced spending with higher education as a whole.
+
+Faculty and departments are prioritizing their spending and choosing what to cut.  
+
+UC has also moved to a new budgeting model for the next FY that has a lot of colleges taking a stark look at their spending as a whole.
+
+AHC has had massive budget cuts for all software offerings.
+
+The combined license has more than half of the users from the College of Medicine, which was previously on a chargeback license.
+
+The Pharmacy and COM groups provided a low renewal response.",Trusted Advisor (4/5),145,86,59,51,60
+CS FY27 Renewal: University of Puerto Rico - Biomedical Sciences,4308,3/5/2026,yellow,Right to Deploy,Fuzail Kadri,6462,,2154,,,Hard to Get (1/5),30,29,97,18,20
+CS FY27 Renewal:   University of Sunderland - Biomedical Sciences,4308,7/28/2026,yellow,Named User,Fuzail Kadri,,Neutral,0,,,Seat at the Table (3/5),20,18,90,13,20
+"CS FY27 Renewal:    University of Saskatchewan - Department of Biochemistry, Microbiology and Immunology",6462,11/1/2026,yellow,Defined Group,Fuzail Kadri,,Full Churn,0,,,,83,35,42,24,30
+CS FY28 Renewal:    Institute of Molecular Genetics of the Czech Academy of Sciences,5600.4,2/1/2027,green,Named User,Fuzail Kadri,5169.6,High Risk,-430.8,Low adoption / usage,,,27,27,100,20,26
+CS FY27 Renewal:  Institute for Clinical and Experimental Medicine,4308,5/15/2026,yellow,Named User,Fuzail Kadri,,,0,,,,20,16,80,13,20
+CS FY29 Renewal:   Indian Institute of Technology // Central IT,12924,12/15/2028,red,Right to Deploy,Fuzail Kadri,,,0,,,,120,7,6,7,60
+CS FY27 Renewal:  Augusta University - Immunology Center of Georgia,5385,12/3/2026,orange,Defined Group,Fuzail Kadri,,Neutral,0,,,Transactional (2/5),60,25,42,18,25
+CS FY27 Renewal: Chulabhorn Graduate Institute,4308,1/12/2027,red,Named User,Fuzail Kadri,,,0,,,,20,4,20,4,20
+CS FY28 Renewal:   IUF GMBH- 40 Named Users,10123.8,2/1/2027,yellow,Named User,Fuzail Kadri,,,0,,,Transactional (2/5),47,41,87,27,47
+CS FY27 Renewal:  University of Hohenheim - Faculty of Natural Science and Agricultural Science // Regine Movius,6462,6/26/2026,red,Named User (Chargeback),Fuzail Kadri,,Extremely Healthy,0,,,Seat at the Table (3/5),40,25,63,19,30
+CS FY27 Renewal:  Tuskegee University Center for Biomedical Research // Temesgen Samuel,4308,5/15/2026,orange,Named User,Fuzail Kadri,,,0,,,,20,19,95,7,20
+CS FY27 Renewal: Concordia University of Wisconsin  - School of Pharmacy & School of Arts & Sciences - Robert Burlage,4308,3/13/2026,red,Named User,Fuzail Kadri,0,,-4308,,,Ghost (0/5),20,10,50,3,20
+CS FY27 Renewal:  Bielefeld University Medical School OWL,6462,5/1/2026,red,Named User (Chargeback),Fuzail Kadri,,Extremely Healthy,0,,,,30,25,83,18,30
+CS FY27 Renewal:  Georgetown University - Department of Biology,8616,7/25/2026,yellow,Defined Group,Fuzail Kadri,,Neutral,0,,,Seat at the Table (3/5),90,64,71,29,40
+CS FY27 Renewal: University of Southampton - School of Clinical & Experimental Sciences,17232,10/14/2026,red,Defined Group,Fuzail Kadri,,,0,,,,200,16,8,14,80
+CS FY27 Renewal:  Universidade do Minho - Life and Health Sciences Research Institute // Rute Carina,6462,7/1/2026,yellow,Named User,Fuzail Kadri,,Healthy,0,,,Seat at the Table (3/5),33,21,64,16,30
+CS FY27 Renewal:  Indian Institute of Science Education and Research Mohali - Department of Biological Sciences,5385,7/3/2026,green,Named User,Fuzail Kadri,,,0,,,,26,26,100,21,25
+CS FY27 Renewal:    Leibniz Institute on Aging – Fritz Lipmann Institute,22388.6,9/1/2026,yellow,Defined Group,Fuzail Kadri,,Healthy,0,,,,150,142,95,107,109
+CS FY27 Renewal:  IIS Aragon // Research Groups,7108.2,6/24/2026,extra green,Defined Group,Fuzail Kadri,,High Risk,0,,,,100,89,89,63,33
+CS FY27 Renewal: University of Southampton - School of Human Development and Health,7539,9/29/2026,yellow,Defined Group,Fuzail Kadri,,,0,,,,50,38,76,33,35
+CS FY27 Renewal: University of Pavia // Simona Collina // Department of Drug Sciences,4308,5/6/2026,orange,Right to Deploy,Fuzail Kadri,,,0,,,,25,23,92,10,20
+CS FY27 Renewal:    University of the West Scotland - School of Health and Life Sciences,8185.2,8/20/2026,orange,Defined Group,Fuzail Kadri,,Healthy,0,,,,65,31,48,22,38
+CS FY27 Renewal:   University of Ljubljana - Faculty of Pharmacy,14001,3/30/2026,yellow,Named User,Fuzail Kadri,0,Full Churn,-14001,,Hidden Chargeback,Trusted Advisor (4/5),65,63,97,47,39
+CS FY27 Renewal: Philipps University of Marburg - Faculty of Medicine,5385,8/8/2026,yellow,Named User (Chargeback),Fuzail Kadri,,,0,,,,26,25,96,20,25
+"CS FY27 Renewal:  University of Saskatchewan - Dept of Anatomy, Physiology and Pharmacology",8831.4,2/1/2026,yellow,Defined Group,Fuzail Kadri,8831.4,Neutral,0,,,Transactional (2/5),80,56,70,33,41
+CS FY27 Renewal:   University of Eastern Piedmont,12924,3/10/2026,yellow,Named User,Fuzail Kadri,12924,Healthy,0,,,Seat at the Table (3/5),62,61,98,43,60
+CS FY27 Renewal:   German Aerospace Center // Thomas Urlings,6462,4/12/2026,yellow,Named User,Fuzail Kadri,6462,Healthy,0,,,Ghost (0/5),30,28,93,17,30
+"CS FY28 Renewal:  University of Nevada, Las Vegas - School of Medicine (Year 2)",21540,3/13/2027,red,Right to Deploy,Fuzail Kadri,,,0,,,,150,28,19,10,100
+CS FY26 Renewal:    Ospedale Pediatrico Bambino Gesù (Bambino Gesù Children’s Hospital) - Research Biobank,10123.8,12/31/2025,orange,Right to Deploy,Fuzail Kadri,0,High Risk,-10123.8,Low activation (e.g. unassigned seats),,Ghost (0/5),55,49,89,29,47
+CS FY27 Renewal:   Burnet Institute // Tommy Tran (IT) Site-wide // 50 Named User + SSO,18943,2/14/2026,orange,Named User,Fuzail Kadri,20463,,1520,,,Transactional (2/5),95,92,97,40,95
+"CS FY27 Renewal:    Kaohsiung Medical University (KMU), College of Medicine",4523.4,8/1/2026,yellow,Named User,Fuzail Kadri,,High Risk,0,,,,21,17,81,15,20
+CS FY27 Renewal: Indian Institute of Science //Department of Developmental Biology and Genetics,4308,10/6/2026,yellow,Named User,Fuzail Kadri,,,0,,,,20,11,55,10,20
+CS FY27 Renewal:  University of Cape Town - Neuroscience Institute,5385,6/10/2026,yellow,Named User,Fuzail Kadri,,Extremely Healthy,0,,,Trusted Advisor (4/5),25,24,96,16,25
+CS FY27 Renewal: Czech Academy of Sciences // Vaclav Paulocik // Institute of Physiology,5385,5/1/2026,orange,Right to Deploy,Fuzail Kadri,,,0,,,,30,24,80,19,25
+CS FY27 Renewal:   NIPER Hyderabad - Named User License,6462,6/26/2026,yellow,Named User,Fuzail Kadri,,No Engagement,0,,,,30,29,97,20,30
+CS FY27 Renewal:  Regional Centre for Biotechnology- 25 Named Users,5385,2/23/2026,green,Named User,Fuzail Kadri,5385,Neutral,0,,,Seat at the Table (3/5),25,25,100,22,25
+CS FY27 Renewal: University of Saskatchewan // College of Dentistry,5385,1/29/2027,,Defined Group,Fuzail Kadri,,,0,,,,40,0,0,0,25
+CS FY27 Renewal:  High Point University - Office of Information Technology,6462,1/6/2027,red,Right to Deploy,Fuzail Kadri,,Neutral,0,,,Transactional (2/5),30,19,63,13,30
+CS FY27 Renewal:   Florida State University - Department of Biomedical Sciences,12493.2,9/18/2026,orange,Defined Group,Fuzail Kadri,,Healthy,0,,,,93,73,78,41,58
+CS FY27 Renewal:    National Health Research Institutes - Library Services,11707.8,1/1/2027,yellow,Named User (Chargeback),Fuzail Kadri,,Healthy,0,,,Transactional (2/5),58,53,91,49,57

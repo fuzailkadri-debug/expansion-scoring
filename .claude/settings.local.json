@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd /Users/fuzail.kadri/Downloads/Expansion\\\\ Scoring\\\\ Model\\\\ Claude/expansion-scoring && python scripts/generate_scoring.py:*)",
+      "Bash(cd:*)",
+      "Bash(cd /Users/fuzail.kadri/Downloads/Expansion\\\\ Scoring\\\\ Model\\\\ Claude/expansion-scoring && python3:*)",
+      "Bash(python3:*)",
+      "Bash(ls:*)",
+      "Bash(head:*)",
+      "Bash(wc:*)"
+    ]
+  }
+}
