@@ -6,8 +6,8 @@ import Sidebar from '@/components/Sidebar';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'CS Intelligence | BioRender',
-  description: 'Customer Success book-of-business intelligence: expansion, churn risk, adoption, and renewals.',
+  title: 'BioRender CS Intelligence Tool',
+  description: 'Customer Success book-of-business intelligence: expansion, churn risk, adoption, and renewals. Created by Fuzail Kadri.',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

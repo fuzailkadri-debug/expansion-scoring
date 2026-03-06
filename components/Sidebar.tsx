@@ -12,7 +12,11 @@ import {
   BarChart2,
   MessageSquare,
   Upload,
+  Settings,
+  Plug,
 } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { loadProfile } from '@/lib/store';
 
 const NAV = [
   { href: '/', label: 'Data Upload', icon: Upload },
@@ -22,20 +26,24 @@ const NAV = [
   { href: '/renewals', label: 'Renewals', icon: RefreshCw },
   { href: '/adoption', label: 'Adoption', icon: BarChart2 },
   { href: '/chat', label: 'AI Chat', icon: MessageSquare, badge: 'Gemini' },
+  { href: '/connectors', label: 'Connectors', icon: Plug },
+  { href: '/settings', label: 'My Profile', icon: Settings },
 ];
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const [csmName, setCsmName] = useState('');
+  useEffect(() => {
+    setCsmName(loadProfile().name);
+  }, []);
 
   return (
     <aside className="w-60 shrink-0 bg-brand text-white flex flex-col min-h-screen">
       {/* Logo */}
       <div className="px-5 py-5 border-b border-brand-light">
-        <div className="flex items-center gap-2">
-          <LayoutDashboard className="w-5 h-5 text-blue-300" />
-          <span className="font-semibold text-sm leading-tight">CS Intelligence</span>
-        </div>
-        <p className="text-xs text-blue-300 mt-0.5">BioRender · Book of Business</p>
+        <img src="/biorender-logo.png" alt="BioRender" className="h-8 w-auto brightness-0 invert mb-2" />
+        <p className="text-xs font-semibold text-white leading-tight">CS Intelligence Tool</p>
+        <p className="text-xs text-blue-300 mt-0.5">by Fuzail Kadri</p>
       </div>
 
       {/* Nav */}
@@ -66,7 +74,8 @@ export default function Sidebar() {
       </nav>
 
       {/* Footer */}
-      <div className="px-5 py-4 border-t border-brand-light">
+      <div className="px-5 py-4 border-t border-brand-light space-y-0.5">
+        {csmName && <p className="text-xs text-white font-medium truncate">{csmName}</p>}
         <p className="text-xs text-blue-300">Powered by Gemini Flash</p>
       </div>
     </aside>
