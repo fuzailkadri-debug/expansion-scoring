@@ -1,10 +1,12 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import { Send, Bot, User, Sparkles, Loader2 } from 'lucide-react';
+import { Send, Bot, User, Sparkles, Loader2, Trash2 } from 'lucide-react';
 import { useAppStore } from '@/lib/store';
 import { buildAIContext } from '@/lib/utils';
 import { ChatMessage } from '@/lib/types';
+
+const CHAT_SESSION_KEY = 'ai_chat_session';
 
 const SUGGESTED_PROMPTS = [
   'Who should I prioritize for expansion outreach this week?',
@@ -23,9 +25,34 @@ export default function ChatPage() {
   const bottomRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
+  // Load saved session on mount
+  useEffect(() => {
+    try {
+      const saved = sessionStorage.getItem(CHAT_SESSION_KEY);
+      if (saved) {
+        const parsed = JSON.parse(saved) as ChatMessage[];
+        if (Array.isArray(parsed) && parsed.length > 0) setMessages(parsed);
+      }
+    } catch { /* ignore */ }
+  }, []);
+
+  // Save session whenever messages change
+  useEffect(() => {
+    if (messages.length > 0) {
+      try {
+        sessionStorage.setItem(CHAT_SESSION_KEY, JSON.stringify(messages));
+      } catch { /* ignore */ }
+    }
+  }, [messages]);
+
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
+
+  function clearSession() {
+    setMessages([]);
+    sessionStorage.removeItem(CHAT_SESSION_KEY);
+  }
 
   async function sendMessage(text: string) {
     if (!text.trim() || streaming) return;
@@ -36,7 +63,6 @@ export default function ChatPage() {
     setInput('');
     setStreaming(true);
 
-    // Placeholder for streaming response
     setMessages((prev) => [...prev, { role: 'assistant', content: '' }]);
 
     try {
@@ -94,7 +120,7 @@ export default function ChatPage() {
         <div className="w-8 h-8 bg-brand rounded-lg flex items-center justify-center">
           <Sparkles className="w-4 h-4 text-white" />
         </div>
-        <div>
+        <div className="flex-1">
           <h1 className="font-semibold text-gray-900 text-sm">AI Chat — Gemini Flash</h1>
           <p className="text-xs text-gray-500">
             {isLoaded
@@ -102,6 +128,15 @@ export default function ChatPage() {
               : 'No data loaded — upload on the home page for full context'}
           </p>
         </div>
+        {messages.length > 0 && (
+          <button
+            onClick={clearSession}
+            className="flex items-center gap-1.5 text-xs text-gray-400 hover:text-gray-600 transition-colors px-2 py-1 rounded"
+          >
+            <Trash2 className="w-3.5 h-3.5" />
+            Clear session
+          </button>
+        )}
       </div>
 
       {/* Messages */}
@@ -116,7 +151,6 @@ export default function ChatPage() {
               </p>
             </div>
 
-            {/* Suggested prompts */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-w-2xl mx-auto">
               {SUGGESTED_PROMPTS.map((p) => (
                 <button
@@ -188,7 +222,7 @@ export default function ChatPage() {
           </button>
         </div>
         <p className="text-xs text-gray-400 text-center mt-2">
-          Enter to send · Shift+Enter for new line
+          Enter to send · Shift+Enter for new line · Session auto-saved
         </p>
       </div>
     </div>

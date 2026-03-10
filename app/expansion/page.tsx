@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { Download } from 'lucide-react';
 import { useAppStore } from '@/lib/store';
 import { fmt$, fmtPct, TIER_COLORS, HEALTH_COLORS } from '@/lib/utils';
 import { downloadCSV } from '@/lib/utils';
 import MetricCard from '@/components/MetricCard';
-import DataTable, { Column } from '@/components/DataTable';
 import NoData from '@/components/NoData';
 import { Account } from '@/lib/types';
 
@@ -18,6 +18,7 @@ export default function ExpansionPage() {
   const { accounts, isLoaded, hasHexData } = useAppStore();
   const [tierFilter, setTierFilter] = useState('All');
   const [trackFilter, setTrackFilter] = useState('All');
+  const router = useRouter();
 
   if (!isLoaded) return <NoData />;
 
@@ -33,41 +34,9 @@ export default function ExpansionPage() {
 
   const sorted = [...view].sort((a, b) => b.totalScore - a.totalScore);
 
-  const cols: Column<Account>[] = [
-    { key: 'organization', label: 'Organization' },
-    { key: 'licenseType', label: 'License Type' },
-    {
-      key: 'healthStatus',
-      label: 'Health',
-      render: (v) => (
-        <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${HEALTH_COLORS[String(v ?? '')]}`}>
-          {String(v) || 'N/A'}
-        </span>
-      ),
-    },
-    {
-      key: 'trueActivation',
-      label: 'Activation',
-      render: (v) => fmtPct(Number(v)),
-    },
-    {
-      key: 'renewalTargetAmount',
-      label: 'ARR',
-      render: (v) => fmt$(Number(v)),
-    },
-    { key: 'daysToRenewal', label: 'Days to Renewal' },
-    { key: 'freeUsers', label: 'Free Users (Dept)' },
-    { key: 'totalScore', label: 'Score' },
-    {
-      key: 'tier',
-      label: 'Tier',
-      render: (v) => (
-        <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TIER_COLORS[String(v)]}`}>
-          {String(v)}
-        </span>
-      ),
-    },
-  ];
+  function handleRowClick(account: Account) {
+    router.push(`/accounts/${encodeURIComponent(account.opportunityName)}`);
+  }
 
   return (
     <div className="p-8 space-y-8">
@@ -75,7 +44,7 @@ export default function ExpansionPage() {
         <div>
           <h1 className="text-2xl font-bold text-gray-900">Expansion Opportunities</h1>
           <p className="text-gray-500 text-sm mt-1">
-            Accounts scored by expansion potential. Tier 1 = 75+ points.
+            Accounts scored by expansion potential. Click any row for full detail.
           </p>
         </div>
         <button
@@ -106,7 +75,7 @@ export default function ExpansionPage() {
       </div>
 
       {/* Filters */}
-      <div className="flex gap-4">
+      <div className="flex gap-4 items-end">
         <div>
           <label className="block text-xs font-medium text-gray-600 mb-1">Tier</label>
           <select
@@ -114,9 +83,7 @@ export default function ExpansionPage() {
             onChange={(e) => setTierFilter(e.target.value)}
             className="text-sm border border-gray-300 rounded-lg px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
-            {TIER_ORDER.map((t) => (
-              <option key={t}>{t}</option>
-            ))}
+            {TIER_ORDER.map((t) => <option key={t}>{t}</option>)}
           </select>
         </div>
         <div>
@@ -126,21 +93,63 @@ export default function ExpansionPage() {
             onChange={(e) => setTrackFilter(e.target.value)}
             className="text-sm border border-gray-300 rounded-lg px-3 py-1.5 bg-white focus:outline-none focus:ring-2 focus:ring-blue-400"
           >
-            {['All', 'Anytime', 'Renewal-Only'].map((t) => (
-              <option key={t}>{t}</option>
-            ))}
+            {['All', 'Anytime', 'Renewal-Only'].map((t) => <option key={t}>{t}</option>)}
           </select>
         </div>
-        <div className="flex items-end pb-1 text-sm text-gray-500">
-          {sorted.length} accounts
-        </div>
+        <div className="text-sm text-gray-500 pb-0.5">{sorted.length} accounts</div>
       </div>
 
-      <DataTable
-        columns={cols as unknown as Column<Record<string, unknown>>[]}
-        data={sorted as unknown as Record<string, unknown>[]}
-        maxHeight="520px"
-      />
+      {/* Clickable account table */}
+      <div className="bg-white border border-gray-200 rounded-xl overflow-hidden">
+        <div className="overflow-auto" style={{ maxHeight: '520px' }}>
+          <table className="w-full text-sm">
+            <thead className="bg-gray-50 border-b border-gray-200 sticky top-0">
+              <tr>
+                {['Organization', 'License Type', 'Health', 'Activation', 'ARR', 'Days', 'Free (Dept)', 'Self-Serve (Dept)', 'Score', 'Tier'].map((h) => (
+                  <th key={h} className="text-left px-4 py-3 text-xs font-semibold text-gray-500 uppercase tracking-wide whitespace-nowrap">
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-100">
+              {sorted.map((a) => (
+                <tr
+                  key={a.opportunityName}
+                  onClick={() => handleRowClick(a)}
+                  className="hover:bg-blue-50 cursor-pointer transition-colors"
+                >
+                  <td className="px-4 py-3 font-medium text-gray-900 max-w-[200px] truncate">{a.organization}</td>
+                  <td className="px-4 py-3 text-gray-600 whitespace-nowrap">{a.licenseType}</td>
+                  <td className="px-4 py-3">
+                    <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${HEALTH_COLORS[a.healthStatus ?? '']}`}>
+                      {a.healthStatus || 'N/A'}
+                    </span>
+                  </td>
+                  <td className="px-4 py-3 text-gray-700">{fmtPct(a.trueActivation)}</td>
+                  <td className="px-4 py-3 text-gray-700 whitespace-nowrap">{fmt$(a.renewalTargetAmount)}</td>
+                  <td className="px-4 py-3 text-gray-700">{a.daysToRenewal}</td>
+                  <td className="px-4 py-3 text-gray-700">{a.freeUsers || '—'}</td>
+                  <td className="px-4 py-3 text-gray-700">{a.selfServeUsers || '—'}</td>
+                  <td className="px-4 py-3 font-semibold text-gray-900">{a.totalScore}</td>
+                  <td className="px-4 py-3">
+                    <span className={`text-xs px-2 py-0.5 rounded-full font-medium ${TIER_COLORS[a.tier]}`}>
+                      {a.tier}
+                    </span>
+                  </td>
+                </tr>
+              ))}
+              {sorted.length === 0 && (
+                <tr>
+                  <td colSpan={10} className="px-4 py-8 text-center text-gray-400 text-sm">
+                    No accounts match the current filters.
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   );
 }

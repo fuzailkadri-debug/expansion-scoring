@@ -10,7 +10,11 @@ export interface Account {
   currentSeatsAvailable: number;
   initialSeats: number;
   trueActivation: number;
-  freeUsers: number;
+  freeUsers: number;              // free users with dept match (same dept as licensed)
+  selfServeUsers: number;         // self-serve users with dept match (same dept as licensed)
+  freeUsersUnmatched: number;     // free users in OTHER depts at same institution (CSQL signal)
+  selfServeUnmatched: number;     // self-serve users in OTHER depts at same institution (CSQL signal)
+  activeUsersLast90Days?: number;
   // Expansion scores
   licensePts: number;
   healthPts: number;
@@ -18,6 +22,7 @@ export interface Account {
   freeUserPts: number;
   arrPts: number;
   renewalPts: number;
+  activeUsersPts: number;
   totalScore: number;
   tier: string;
   // Churn scores
@@ -32,4 +37,10 @@ export interface Account {
 export interface ChatMessage {
   role: 'user' | 'assistant';
   content: string;
+}
+
+export interface Note {
+  id: string;
+  text: string;
+  timestamp: number;
 }

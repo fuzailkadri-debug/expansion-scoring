@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import {
-  LayoutDashboard,
   BookOpen,
   TrendingUp,
   AlertTriangle,
@@ -14,17 +13,25 @@ import {
   Upload,
   Settings,
   Plug,
+  Sun,
+  Layers,
+  Mail,
+  Zap,
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { loadProfile } from '@/lib/store';
 
 const NAV = [
   { href: '/', label: 'Data Upload', icon: Upload },
+  { href: '/today', label: 'Your Day', icon: Sun },
   { href: '/book-overview', label: 'Book Overview', icon: BookOpen },
   { href: '/expansion', label: 'Expansion', icon: TrendingUp },
+  { href: '/csql', label: 'CSQL Pipeline', icon: Zap },
   { href: '/churn', label: 'Churn Risk', icon: AlertTriangle },
   { href: '/renewals', label: 'Renewals', icon: RefreshCw },
   { href: '/adoption', label: 'Adoption', icon: BarChart2 },
+  { href: '/projects', label: 'Team Projects', icon: Layers },
+  { href: '/templates', label: 'Email Templates', icon: Mail },
   { href: '/chat', label: 'AI Chat', icon: MessageSquare, badge: 'Gemini' },
   { href: '/connectors', label: 'Connectors', icon: Plug },
   { href: '/settings', label: 'My Profile', icon: Settings },
@@ -41,15 +48,15 @@ export default function Sidebar() {
     <aside className="w-60 shrink-0 bg-brand text-white flex flex-col min-h-screen">
       {/* Logo */}
       <div className="px-5 py-5 border-b border-brand-light">
-        <img src="/biorender-logo.png" alt="BioRender" className="h-8 w-auto brightness-0 invert mb-2" />
+        <img src="/biorender-logo.png" alt="BioRender" className="h-8 w-auto mb-2 rounded" />
         <p className="text-xs font-semibold text-white leading-tight">CS Intelligence Tool</p>
         <p className="text-xs text-blue-300 mt-0.5">by Fuzail Kadri</p>
       </div>
 
       {/* Nav */}
-      <nav className="flex-1 px-3 py-4 space-y-0.5">
+      <nav className="flex-1 px-3 py-4 space-y-0.5 overflow-y-auto">
         {NAV.map(({ href, label, icon: Icon, badge }) => {
-          const active = pathname === href;
+          const active = pathname === href || (href !== '/' && pathname.startsWith(href));
           return (
             <Link
               key={href}

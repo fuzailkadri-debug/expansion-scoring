@@ -45,12 +45,15 @@ export function buildAIContext(accounts: Account[]): string {
   const renewing30 = accounts.filter((a) => a.daysToRenewal <= 30);
   const renewing90 = accounts.filter((a) => a.daysToRenewal <= 90);
 
-  const top10Expansion = [...tier1]
+  const tier2 = accounts.filter((a) => a.tier === 'Tier 2');
+  const expansionPool = tier1.length > 0 ? tier1 : tier2;
+  const expansionLabel = tier1.length > 0 ? 'Tier 1' : 'Tier 2 (highest scored accounts)';
+  const top10Expansion = [...expansionPool]
     .sort((a, b) => b.totalScore - a.totalScore)
     .slice(0, 10)
     .map(
       (a) =>
-        `  - ${a.organization}: Score ${a.totalScore}, ${a.licenseType}, ` +
+        `  - ${a.organization}: Score ${a.totalScore} (${a.tier}), ${a.licenseType}, ` +
         `${a.healthStatus || 'unknown'} health, ${fmtPct(a.trueActivation)} activation, ` +
         `${a.freeUsers} dept-match users, renews in ${a.daysToRenewal}d (${fmt$(a.renewalTargetAmount)})`,
     )
@@ -83,8 +86,8 @@ export function buildAIContext(accounts: Account[]): string {
 - Renewing ≤ 30 days: ${renewing30.length} accounts
 - Renewing ≤ 90 days: ${renewing90.length} accounts
 
-TOP EXPANSION OPPORTUNITIES (Tier 1 by score):
-${top10Expansion || '  None yet — upload Hex data to score accounts'}
+TOP EXPANSION OPPORTUNITIES (${expansionLabel}):
+${top10Expansion || '  No accounts loaded yet'}
 
 HIGH CHURN RISK ACCOUNTS:
 ${top10Churn || '  None flagged as high risk'}

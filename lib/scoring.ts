@@ -13,7 +13,7 @@ const LICENSE_PTS: Record<string, number> = {
 const HEALTH_PTS: Record<string, number> = {
   'Extra Green': 25,
   'Green': 20,
-  'Yellow': 8,
+  'Yellow': 14,  // Fixed: was 8, should be midpoint between Green (20) and Red (3)
   'Red': 3,
 };
 
@@ -37,8 +37,14 @@ const RENEWAL_DG_SW: [number, number][] = [
   [30, 20], [60, 17], [90, 14], [120, 10], [180, 5], [999, 2],
 ];
 
+// Active users scoring — DG/Sitewide only (max 5 pts)
+// Measures engagement ratio: active users last 90d / seats filled
+const ACTIVE_USER_BRACKETS: [number, number][] = [
+  [0.9, 5], [0.7, 4], [0.5, 3], [0.3, 2], [0.01, 1], [0, 0],
+];
+
 export const TIER_THRESHOLDS: [number, string][] = [
-  [75, 'Tier 1'], [55, 'Tier 2'], [35, 'Tier 3'], [0, 'Below Threshold'],
+  [70, 'Tier 1'], [50, 'Tier 2'], [35, 'Tier 3'], [0, 'Below Threshold'],
 ];
 
 const DG_SW_TYPES = ['Defined Group', 'Sitewide'];
@@ -132,40 +138,93 @@ export function parseSalesforceRows(rows: Record<string, unknown>[]): Partial<Ac
       initialSeats,
       trueActivation: calcActivation(licenseType, seatsFilled, currentSeats, initialSeats),
       freeUsers: 0,
+      selfServeUsers: 0,
+      freeUsersUnmatched: 0,
+      selfServeUnmatched: 0,
+      activeUsersLast90Days: parseNumber(row['Active Users Last 90 Days']) || undefined,
     };
   });
 }
 
-export function parseHexRows(rows: Record<string, unknown>[]): Map<string, number> {
-  const lookup = new Map<string, number>();
-  if (!rows.length) return lookup;
+export interface HexLookup {
+  free: Map<string, number>;
+  selfServe: Map<string, number>;
+  freeUnmatched: Map<string, number>;
+  selfServeUnmatched: Map<string, number>;
+}
 
-  const firstRow = rows[0];
-  const normalize = (s: string) => s.toLowerCase().replace(/\s+/g, ' ').trim();
+export function parseHexRows(rows: Record<string, unknown>[]): HexLookup {
+  const empty = { free: new Map<string, number>(), selfServe: new Map<string, number>(), freeUnmatched: new Map<string, number>(), selfServeUnmatched: new Map<string, number>() };
+  if (!rows.length) return empty;
 
-  if ('num_free_users' in firstRow) {
-    // Format A: aggregate by opportunity_name, use dept_match as primary
-    const agg = new Map<string, number>();
-    for (const row of rows) {
-      const key = normalize(String(row['opportunity_name'] ?? ''));
-      const match = parseNumber(row['num_users_with_dept_match']);
-      agg.set(key, (agg.get(key) ?? 0) + match);
-    }
-    agg.forEach((v, k) => lookup.set(k, v));
-  } else if ('free_users_with_dept_match' in firstRow) {
-    // Format B
-    const agg = new Map<string, number>();
-    for (const row of rows) {
-      const key = normalize(String(row['opportunity_name'] ?? ''));
-      const match =
-        parseNumber(row['free_users_with_dept_match']) +
-        parseNumber(row['self_serve_with_dept_match']);
-      agg.set(key, (agg.get(key) ?? 0) + match);
-    }
-    agg.forEach((v, k) => lookup.set(k, v));
+  const normalizeKey = (s: string) =>
+    s.toLowerCase().trim().replace(/\s+/g, '_').replace(/[^a-z0-9_]/g, '');
+  const normalizeStr = (s: string) => s.toLowerCase().replace(/\s+/g, ' ').trim();
+
+  const normalized = rows.map((row) => {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(row)) out[normalizeKey(k)] = v;
+    return out;
+  });
+
+  const keys = Object.keys(normalized[0]);
+
+  const oppCol =
+    keys.find((k) => k === 'opportunity_name') ??
+    keys.find((k) => k.includes('opportunity')) ??
+    'opportunity_name';
+
+  // Dept-matched columns (same dept as licensed account)
+  const freeDeptCol = keys.find((k) => k.startsWith('free') && k.includes('with_dept_match'));
+  const ssDeptCol = keys.find((k) => (k.startsWith('self') || k.startsWith('ss')) && k.includes('with_dept_match'));
+
+  // Unmatched columns (other depts at same institution = CSQL signal)
+  const freeUnmatchedCol = keys.find((k) => k.startsWith('free') && k.includes('without_dept_match'));
+  const ssUnmatchedCol = keys.find((k) => (k.startsWith('self') || k.startsWith('ss')) && k.includes('without_dept_match'));
+
+  // Combined fallback
+  const combinedDeptCol = !freeDeptCol && !ssDeptCol
+    ? keys.find((k) => k.includes('with_dept_match') || k === 'num_users_with_dept_match')
+    : null;
+
+  // Total fallback
+  const freeFallbackCol = keys.find((k) => k === 'num_free_users' || k === 'total_free_users');
+  const ssFallbackCol = keys.find((k) => k === 'total_self_serve_users' || k.includes('total_self_serve'));
+
+  console.log('[Hex] ALL column keys:', keys);
+  console.log('[Hex] free-dept:', freeDeptCol, '| ss-dept:', ssDeptCol, '| free-unmatched:', freeUnmatchedCol, '| ss-unmatched:', ssUnmatchedCol);
+
+  const freeAgg = new Map<string, number>();
+  const ssAgg = new Map<string, number>();
+  const freeUnmatchedAgg = new Map<string, number>();
+  const ssUnmatchedAgg = new Map<string, number>();
+
+  for (const row of normalized) {
+    const key = normalizeStr(String(row[oppCol] ?? ''));
+    if (!key) continue;
+
+    const freeVal = freeDeptCol
+      ? parseNumber(row[freeDeptCol])
+      : combinedDeptCol ? parseNumber(row[combinedDeptCol])
+      : freeFallbackCol ? parseNumber(row[freeFallbackCol]) : 0;
+
+    const ssVal = ssDeptCol
+      ? parseNumber(row[ssDeptCol])
+      : ssFallbackCol ? parseNumber(row[ssFallbackCol]) : 0;
+
+    const freeUnmatched = freeUnmatchedCol ? parseNumber(row[freeUnmatchedCol]) : 0;
+    const ssUnmatched = ssUnmatchedCol ? parseNumber(row[ssUnmatchedCol]) : 0;
+
+    freeAgg.set(key, (freeAgg.get(key) ?? 0) + freeVal);
+    ssAgg.set(key, (ssAgg.get(key) ?? 0) + ssVal);
+    freeUnmatchedAgg.set(key, (freeUnmatchedAgg.get(key) ?? 0) + freeUnmatched);
+    ssUnmatchedAgg.set(key, (ssUnmatchedAgg.get(key) ?? 0) + ssUnmatched);
   }
 
-  return lookup;
+  console.log('[Hex] Parsed', rows.length, 'rows →', freeAgg.size, 'unique opportunities');
+  console.log('[Hex] Top 5 by free dept-match:', [...freeAgg.entries()].sort((a, b) => b[1] - a[1]).slice(0, 5));
+
+  return { free: freeAgg, selfServe: ssAgg, freeUnmatched: freeUnmatchedAgg, selfServeUnmatched: ssUnmatchedAgg };
 }
 
 export function mergeAndScore(
@@ -175,16 +234,25 @@ export function mergeAndScore(
 ): Account[] {
   const accounts = parseSalesforceRows(sfRows);
   const hexLookup = parseHexRows(hexRows);
+  const hexWasUploaded = hexRows.length > 0;
 
   const normalize = (s: string) => s.toLowerCase().replace(/\s+/g, ' ').trim();
 
-  // Merge hex data
+  // Merge hex data — store free, self-serve, and unmatched (CSQL) separately
+  let hexMatched = 0;
   for (const acct of accounts) {
     if (acct.opportunityName) {
       const key = normalize(acct.opportunityName);
-      acct.freeUsers = hexLookup.get(key) ?? 0;
+      const freeVal = hexLookup.free.get(key);
+      const ssVal = hexLookup.selfServe.get(key);
+      acct.freeUsers = freeVal ?? 0;
+      acct.selfServeUsers = ssVal ?? 0;
+      acct.freeUsersUnmatched = hexLookup.freeUnmatched.get(key) ?? 0;
+      acct.selfServeUnmatched = hexLookup.selfServeUnmatched.get(key) ?? 0;
+      if (freeVal !== undefined || ssVal !== undefined) hexMatched++;
     }
   }
+  console.log('[Merge] Hex matched', hexMatched, 'of', accounts.length, 'SF accounts');
 
   // Build Zendesk lookup
   const zdLookup = new Map<string, number>();
@@ -204,30 +272,47 @@ export function mergeAndScore(
   }
 
   // Score each account
-  return accounts.map((acct) => scoreAccount(acct, zdLookup));
+  return accounts.map((acct) => scoreAccount(acct, zdLookup, hexWasUploaded));
 }
 
-function scoreAccount(acct: Partial<Account>, zdLookup: Map<string, number>): Account {
+function scoreAccount(
+  acct: Partial<Account>,
+  zdLookup: Map<string, number>,
+  hexWasUploaded: boolean,
+): Account {
   const lt = acct.licenseType ?? '';
   const isDgSw = DG_SW_TYPES.includes(lt);
   const freeUsers = acct.freeUsers ?? 0;
+  const selfServeUsers = acct.selfServeUsers ?? 0;
+  const totalDeptMatchUsers = freeUsers + selfServeUsers;
 
   const licensePts = LICENSE_PTS[lt] ?? 0;
   const healthPts = HEALTH_PTS[acct.healthStatus ?? ''] ?? 0;
   const activationPts = getScore(acct.trueActivation ?? 0, ACTIVATION_BRACKETS);
-  const freeUserPts = getScore(freeUsers, FREE_USER_BRACKETS);
+  const freeUserPts = getScore(totalDeptMatchUsers, FREE_USER_BRACKETS);
   const arrPts = getScore(acct.renewalTargetAmount ?? 0, ARR_BRACKETS);
   const renewalPts = getRenewalScore(
     acct.daysToRenewal ?? 365,
     isDgSw ? RENEWAL_DG_SW : RENEWAL_ANYTIME,
   );
 
-  let totalScore = 0;
-  let tier = 'Need Hex Data';
+  // Active Users Last 90 Days — DG/Sitewide only
+  let activeUsersPts = 0;
+  if (isDgSw && acct.activeUsersLast90Days !== undefined && acct.activeUsersLast90Days > 0) {
+    const seatsFilled = acct.seatsFilled ?? 0;
+    const ratio = seatsFilled > 0
+      ? acct.activeUsersLast90Days / seatsFilled
+      : 1; // if no seats filled but active users exist, treat as 100%
+    activeUsersPts = getScore(ratio, ACTIVE_USER_BRACKETS);
+  }
 
-  if (freeUsers > 0) {
-    totalScore = licensePts + healthPts + activationPts + freeUserPts + arrPts + renewalPts;
-    tier = 'Below Threshold';
+  // Always score on available signals — only mark 'Need Hex Data' if hex not uploaded
+  const totalScore = licensePts + healthPts + activationPts + freeUserPts + arrPts + renewalPts + activeUsersPts;
+
+  let tier = 'Below Threshold';
+  if (!hexWasUploaded && freeUsers === 0) {
+    tier = 'Need Hex Data';
+  } else {
     for (const [threshold, tierName] of TIER_THRESHOLDS) {
       if (totalScore >= threshold) {
         tier = tierName;
@@ -277,12 +362,17 @@ function scoreAccount(acct: Partial<Account>, zdLookup: Map<string, number>): Ac
     initialSeats: acct.initialSeats ?? 0,
     trueActivation: acct.trueActivation ?? 0,
     freeUsers,
+    selfServeUsers,
+    freeUsersUnmatched: acct.freeUsersUnmatched ?? 0,
+    selfServeUnmatched: acct.selfServeUnmatched ?? 0,
+    activeUsersLast90Days: acct.activeUsersLast90Days,
     licensePts,
     healthPts,
     activationPts,
     freeUserPts,
     arrPts,
     renewalPts,
+    activeUsersPts,
     totalScore,
     tier,
     churnHealthPts,
